@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');)
+
+:root {
+    --primary-color: #833ab4;
+    --secondary-color: #f7c860;
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --color-1: #f9f6f3;
+    --color-2: #f3f7f9;
+    --color-3: #f6f3f9;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Poppins, 'Segeo UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+body{
+    padding: 1em;
+    background-color: rgb(246, 234, 234);
+}
+
+h1, h2, h3 {
+    font-family: Merriweather, Poppins, 'Segeo UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right:auto;
+    font-family: Merriweather, Poppins;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: rgb(246, 243, 239); 
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.flex-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(188, 215, 246);
+    padding: 0.75em 1.25em;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+.secondary {
+    background-color: rgb(248, 203, 203);
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: rgb(245, 248, 250);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+section img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+section#summer-collection {
+    background-color: rgb(243, 238, 247);
+}
+
+.grid-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+details {
+    margin-top: 1em;
+    background-color: rgb(216, 230, 247);
+    border-radius: 1em;
+}
+
+details summary {
+    padding: 1em;
+    font-size: 1.5rem;
+    font-family: Merriweather, Poppins, 'Segeo UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+details p {
+    padding: 0 2em 2em 2em;
+}
+
+
